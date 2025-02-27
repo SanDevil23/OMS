@@ -10,7 +10,7 @@ service OrderService {
 message Order {
     int32 OrderId  = 1;
     int32 CustomerId = 2;
-    int32 ProuctId = 3;
+    int32 ProductId = 3;
     int32 Quantity = 4;
 }
 

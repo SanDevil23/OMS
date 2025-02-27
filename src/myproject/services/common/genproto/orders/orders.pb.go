@@ -25,7 +25,7 @@ type Order struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	OrderId       int32                  `protobuf:"varint,1,opt,name=OrderId,proto3" json:"OrderId,omitempty"`
 	CustomerId    int32                  `protobuf:"varint,2,opt,name=CustomerId,proto3" json:"CustomerId,omitempty"`
-	ProuctId      int32                  `protobuf:"varint,3,opt,name=ProuctId,proto3" json:"ProuctId,omitempty"`
+	ProductId      int32                  `protobuf:"varint,3,opt,name=ProuctId,proto3" json:"ProuctId,omitempty"`
 	Quantity      int32                  `protobuf:"varint,4,opt,name=Quantity,proto3" json:"Quantity,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
@@ -75,9 +75,9 @@ func (x *Order) GetCustomerId() int32 {
 	return 0
 }
 
-func (x *Order) GetProuctId() int32 {
+func (x *Order) GetProductId() int32 {
 	if x != nil {
-		return x.ProuctId
+		return x.ProductId
 	}
 	return 0
 }
