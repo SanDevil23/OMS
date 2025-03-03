@@ -4,6 +4,7 @@ option go_package  = "Users/admin/Code/myProject/src/common/orders";
 
 service OrderService {
     rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse) {}
+    rpc GetOrders(GetOrdersRequest) returns (GetOrdersResponse) {}
 }   
 
 
